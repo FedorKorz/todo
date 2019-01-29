@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <meta charset="utf-8">
+ <title>initial</title>
+ <link rel="stylesheet" href="./style.css">
+</head> 
+<body>
+   <div class="wrapper">
+
+       <div class="column-to-do">
+         <div class="name">
+           <span class="name-common">To Do</span>
+           <span class="name-sort" onclick="sortTasks('.column-to-do')">sort (A-z)</span>
+         </div>
+         <div class="add-task"> 
+            <span class="add-task-text" onclick="addTask('.column-to-do')">Add task</span> 
+         </div>
+         <div class="board"> </div>
+       </div>
+       
+       <div class="column-in-process">
+         <div class="name">
+           <span class="name-common">In process</span>
+           <span class="name-sort" onclick="sortTasks('.column-in-process')">sort (A-z)</span>
+         </div>
+         <div class="add-task"> 
+           <span class="add-task-text" onclick="addTask('.column-in-process')">Add task</span> 
+         </div>
+         <div class="board">
+         
+         </div>
+       </div>
+       
+       <div class="column-done">
+         <div class="name">Done</div>
+         <div class="add-task"> 
+            <span class="add-task-text" onclick="addTask('.column-done')">Add task</span> 
+         </div>
+         <div class="board"></div>
+       </div>
+     </div>
+</body>
+<script src="./index.js"></script>
+</html> 

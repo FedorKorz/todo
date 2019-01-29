@@ -1,0 +1,107 @@
+body {
+    background: #E5E5E6;;
+ }
+ 
+ div {
+    outline: none;
+ }
+ 
+ [contentEditable=true]:empty:not(:focus):before {
+    content:attr(data-text);
+    opacity: 0.2;
+ }
+ 
+ .wrapper {
+    display: flex;
+    width: 100%;
+ }
+ 
+ .name {
+    margin: 0px 0;
+    padding: 10px 0;
+    position: relative;
+    background: white;
+    border-radius: 8px;
+ }
+ 
+ .add-task {
+    color: #4B7CF3;
+    cursor: pointer;
+    margin: 0 0 20px 0;
+    background: white;
+    padding: 0 0 10px;
+ }
+ 
+ .name-sort {
+    position: absolute;
+    right: 10px;
+    color: #2DCD72;
+    cursor: pointer;
+ }
+ 
+ .add-task-text {
+    border-bottom: 1px solid #E3EBFB;
+ }
+ 
+ 
+ .column-done, .column-to-do, .column-in-process {
+    width: 50%;
+    text-align: center;
+    background: #F2F2F2;
+    border-radius: 8px;
+    margin: 0 20px 0 0;
+ }
+ 
+ .column:last-child { margin: 0; }
+ 
+ .board {
+    min-height : 400px;
+ }
+ 
+ .column.done task {
+    opacity: 0.4;
+    pointer-events: none;
+ }
+ 
+ .task {
+    background: white;
+    display: flex;
+    margin: 0 10px 20px 10px;
+    flex-direction: column;
+    text-align: left;
+    padding: 10px;
+ }
+ 
+ .task .task-name {
+    font-weight: 900;
+    font-size: 16px;
+    margin: 0 0 10px 0;
+ }
+ 
+ .task .task-description {
+    font-size: 14px;
+    margin: 0 0 10px 0;
+ }
+ 
+ .task .task-delete {
+    color: #ef5050;
+    font-size: 14px;
+    cursor: pointer;
+    margin: 0 10px 0 0;
+ }
+ 
+ .task .task-move {
+    color: #bdb9b9;
+    font-size: 14px;
+    cursor: pointer;
+    position: relative;
+ }
+ 
+ .task .task-move-drop {
+    position: absolute;
+    background: white;
+    padding: 10px 15px 10px 10px;
+    list-style-type: none;
+    left: 0;
+    top: 0;
+ }
